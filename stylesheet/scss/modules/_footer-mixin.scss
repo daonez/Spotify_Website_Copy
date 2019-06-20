@@ -1,0 +1,44 @@
+@mixin Desktop-lg-footer {
+    @media only screen and (max-width:992px) {
+        @content;
+
+
+    }
+}
+
+
+@mixin Desktop-xl-footer {
+    @media only screen and (min-width: 1200px) {
+        @content;
+
+
+    }
+}
+
+@mixin Desktop-lg-row {
+    @media only screen and (max-width:992px) {
+        @content;
+
+
+    }
+}
+
+@mixin tablets-row {
+    @media only screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin tablets-row-min {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@mixin small-tablet {
+    @media only screen and (max-width : 578px) {
+        @content;
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,900&display=swap');
+
+$bodyFont: 'Poppins',
+sans-serif;
+
+$light:300;
+$normal:400;
+$semi-bold:600;
+$bold:700;
+$large:900;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: $bodyFont;
+    font-weight: $normal;
+    margin: 0;
+}

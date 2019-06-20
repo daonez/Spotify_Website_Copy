@@ -1,0 +1,18 @@
+//part2
+
+
+
+
+@mixin Desktop-lg-row {
+    @media only screen and (max-width:992px) {
+        @content;
+
+
+    }
+}
+
+@mixin tablets {
+    @media only screen and (max-width:768px) {
+        @content;
+    }
+}
