@@ -1,93 +1,93 @@
 .part1 {
+  color: $fontcolor;
+
+  .jumbotron {
+    background: url("../../img/joshua-earle-12689-unsplash_min.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    @include lg-tablet-md-desktop-max-991 {
+
+      padding: 4px;
+    }
+
+
+    @include tablets-max {
+
+      height: 100%;
+    }
+
+  }
+
+
+  h1 {
+    font-weight: $large;
+    font-size: 64px;
+    text-shadow: 1px 1px 7px #000;
+    margin: 3rem 0 1rem;
+  }
+
+  h2 {
+    font-weight: $large;
+    font-size: 32px;
+    text-shadow: 1px 1px 7px #000;
+    margin: 1rem;
+
+  }
+
+  p {
+    a {
+      text-decoration: underline;
+      color: $fontcolor;
+      padding: 4px;
+    }
+
+    margin:34px;
     color: $fontcolor;
-
-    .jumbotron {
-        background: url("../../img/joshua-earle-12689-unsplash_min.jpg") center center no-repeat;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-
-        @include lg-tablet-md-desktop-max-991 {
-
-            padding: 4px;
-        }
-
-
-        @include tablets-max {
-
-            height: 100%;
-        }
+    text-shadow: 1px 1px 7px #000;
+    font-size: 12px;
 
 
 
+
+  }
+
+  .email {
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    color: #000;
+    margin-right: 10px;
+    padding: 10px;
+    width: 240px;
+  }
+
+  .sign_up {
+    font-size: 14px;
+    background-color: #1AA34A;
+    border-radius: 500px;
+    font-weight: $bold;
+    border: none;
+    padding: 16px 48px 18px;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    margin: 4px;
+
+    &:hover {
+      background: #1ED760;
     }
+  }
 
-    h1 {
-        font-weight: $large;
-        font-size: 64px;
-        text-shadow: 1px 1px 7px #000;
-        margin: 3rem 0 1rem;
+  .container {
+    text-align: center;
+    padding: 0;
+
+    div p {
+      margin: 2rem 0;
     }
-
-    h2 {
-        font-weight: $large;
-        font-size: 32px;
-        text-shadow: 1px 1px 7px #000;
-        margin: 1rem;
-
-    }
-
-    p {
-        a {
-            text-decoration: underline;
-            color: $fontcolor;
-
-        }
-
-        margin:34px;
-        color: $fontcolor;
-        text-shadow: 1px 1px 7px #000;
-        font-size: 12px;
-
-
-
-    }
-
-    .email {
-        font-size: 16px;
-        border-radius: 2px;
-        border: none;
-        color: #000;
-        margin-right: 10px;
-        padding: 10px;
-        width: 240px;
-    }
-
-    .sign_up {
-        font-size: 14px;
-        background-color: #1AA34A;
-        border-radius: 500px;
-        font-weight: $bold;
-        border: none;
-        padding: 16px 48px 18px;
-        border-width: 0;
-        letter-spacing: 2px;
-        min-width: 160px;
-        margin: 4px;
-
-        &:hover {
-            background: #1ED760;
-        }
-    }
-
-    .container {
-        text-align: center;
-        padding: 0;
-
-        div p {
-            margin: 2rem 0;
-        }
-    }
+  }
 
 
 
