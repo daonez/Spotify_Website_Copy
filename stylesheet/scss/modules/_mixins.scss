@@ -1,0 +1,47 @@
+//Phones (576px)
+//Tablets(768px)
+//Large-Tablets~Medium Desktops(992px)
+//Large Desktops~Extra Large Desktops (1200px)
+
+@mixin lg-xl-desktop-min-1200 {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg-tablet-md-desktop-max-991 {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin lg-tablet-md-desktop-max-992 {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin lg-tablet-md-desktop-min-992 {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablets-max {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablets-min {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@mixin small-tablet {
+  @media only screen and (max-width: 578px) {
+    @content;
+  }
+}

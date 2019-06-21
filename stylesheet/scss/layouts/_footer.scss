@@ -1,326 +1,271 @@
 footer {
-    background: $background-color;
+  background: $background-color;
 
-    .footer-logo {
+  .footer-logo {
+    width: 100%;
 
+    @include lg-tablet-md-desktop-max-992 {
+      margin: 0% 79%;
+    }
+
+    @include tablets-max {
+      margin: 0px 17% 0 9%;
+    }
+  }
+
+  .footer {
+    padding: 40px 0 30px;
+
+    @include lg-xl-desktop-min-1200 {
+      padding: 80px 0 50px;
+    }
+
+    @include lg-tablet-md-desktop-max-992 {
+      padding: 50px 0 20px;
+    }
+  }
+
+  img {
+    height: 16px;
+  }
+
+  .container {
+    display: block;
+
+    @include lg-tablet-md-desktop-max-992 {
+      display: contents;
+    }
+
+    @include tablets-max {
+      width: 750px;
+    }
+
+    .bottom {
+      margin: 100px 0;
+
+      @include lg-tablet-md-desktop-max-992 {
+        margin: 0 9px;
+      }
+
+      &-row {
+        margin: 0;
+      }
+    }
+  }
+
+  .row {
+    width: 100%;
+
+    .col-xs-6 {
+      margin: 0px 29px;
+
+      @include lg-tablet-md-desktop-max-992 {
+        margin: 54px 52px 25px 5px;
+        padding: 0;
+      }
+
+      @include tablets-max {
+        margin: 27px 0px 0px 73px;
+      }
+
+      @include small-tablet {
+        margin: 25px 0px 0px 59px;
+      }
+
+      ul {
+        li {
+          font-size: 15px;
+
+          a {
+            color: $fontcolor;
+            text-decoration: none;
+
+            &:hover {
+              color: $hovercolor;
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      color: $footertext;
+      font-weight: $large;
+      font-size: 12px;
+      margin: 18px 0px;
+      text-align: left;
+    }
+
+    ul {
+      color: $fontcolor;
+      font-weight: $normal;
+      padding: 0px 0px 0px 1px;
+
+      li {
+        margin: 0px 0px 11px 0px;
+
+        cursor: pointer;
+      }
+    }
+
+    .col-sns {
+      margin: 7px -2px;
+      padding: 0;
+
+      @include lg-tablet-md-desktop-max-992 {
+        margin: 114px 111px 0;
+      }
+
+      @include tablets-max {
+        margin: 114px 40px 0;
+      }
+
+      a {
+        width: 49px;
+        background-color: #222326;
+        display: flex;
+        border-radius: 50%;
+        text-decoration: none;
+
+        :hover {
+          color: #1ed760;
+        }
+
+        i {
+          color: $fontcolor;
+          margin: 12px;
+          font-size: 25px;
+        }
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 7px;
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .bottom-row {
+    .row-small {
+      .nav-small {
         width: 100%;
+        margin: 28px 0;
 
-        @include Desktop-lg-row {
-            margin: 0% 79%;
-
+        @include lg-tablet-md-desktop-max-992 {
+          width: 70%;
+          margin: 26px 0px 0 105px;
         }
 
+        @include tablets-max {
+          margin: 0px 19px 0px 32px;
 
-
-        @include tablets-row {
-            margin: 0px 17% 0 9%;
-        }
-    }
-
-    .footer {
-        padding: 40px 0 30px;
-
-        @include Desktop-xl-footer {
-            padding: 80px 0 50px;
+          width: 71%;
         }
 
-        @include Desktop-lg-footer {
-            padding: 50px 0 20px;
-        }
-    }
-
-    img {
-        height: 16px;
-    }
-
-
-    .container {
-        display: block;
-
-        @include Desktop-lg-row {
-            display: contents;
-        }
-
-        @include tablets-row {
-            width: 750px;
-        }
-
-        .bottom {
-            margin: 100px 0;
-
-            @include Desktop-lg-row {
-                margin: 0 9px;
-
-            }
-
-            &-row {
-                margin: 0;
-            }
-        }
-    }
-
-
-    .row {
-        width: 100%;
-
-
-
-        .col-xs-6 {
-            margin: 0px 29px;
-
-            @include Desktop-lg-row {
-                margin: 54px 52px 25px 5px;
-                padding: 0;
-            }
-
-            @include tablets-row {
-                margin: 27px 0px 0px 73px;
-            }
-
-            @include small-tablet {
-                margin: 25px 0px 0px 59px;
-            }
-
-            ul {
-                li {
-                    font-size: 15px;
-
-                    a {
-                        color: $fontcolor;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: $hovercolor;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        h3 {
-            color: $footertext;
-            font-weight: $large;
-            font-size: 12px;
-            margin: 18px 0px;
-            text-align: left;
-
-
+        @include small-tablet {
+          width: 66%;
+          margin: auto;
         }
 
         ul {
-            color: $fontcolor;
-            font-weight: $normal;
-            padding: 0px 0px 0px 1px;
+          display: flex;
+          padding: 0px;
+          font-size: 11px;
+          margin: 0 0px 0px -21px;
 
+          @include small-tablet {
+            display: flex;
+            padding: 0px;
+            font-size: 11px;
+            margin: 0 0px 0px -1px;
+          }
 
-            li {
-                margin: 0px 0px 11px 0px;
+          a {
+            padding: 0 4px;
+            color: $footertext;
+            text-decoration: none;
+            font-size: 12px;
 
-                cursor: pointer;
+            @include small-tablet {
+              padding: 0 2px;
+              font-size: 7px;
             }
+
+            &:hover {
+              color: $hovercolor;
+            }
+          }
         }
+      }
 
-        .col-sns {
-            margin: 7px -2px;
-            padding: 0;
-
-            @include Desktop-lg-row {
-                margin: 114px 111px 0;
-            }
-
-            @include tablets-row {
-                margin: 114px 40px 0;
-            }
-
-
-
-
-
-            a {
-
-                width: 49px;
-                background-color: #222326;
-                display: flex;
-                border-radius: 50%;
-                text-decoration: none;
-
-                :hover {
-                    color: #1ED760;
-                }
-
-                i {
-                    color: $fontcolor;
-                    margin: 12px;
-                    font-size: 25px;
-
-
-                }
-
-            }
-
-            ul {
-                display: flex;
-
-                li {
-                    margin: 7px;
-                    list-style-type: none;
-                }
-            }
-
-
-        }
-
-
-
-
-
-    }
-
-    .bottom-row {
-        .row-small {
-            .nav-small {
-                width: 100%;
-                margin: 28px 0;
-
-                @include Desktop-lg-row {
-                    width: 71%;
-
-
-
-                    margin: 26px 0px 0 105px;
-                }
-
-                @include tablets-row {
-                    margin: 0px 19px 0px 32px;
-
-                    width: 71%;
-                }
-
-                @include small-tablet {
-                    width: 66%;
-                    margin: auto;
-                }
-
-                ul {
-                    display: flex;
-                    padding: 0px;
-                    font-size: 11px;
-                    margin: 0 0px 0px -21px;
-
-                    @include small-tablet {
-                        display: flex;
-                        padding: 0px;
-                        font-size: 11px;
-                        margin: 0 0px 0px -1px;
-                    }
-
-                    a {
-                        padding: 0 4px;
-                        color: $footertext;
-                        text-decoration: none;
-                        font-size: 12px;
-
-                        @include small-tablet {
-                            padding: 0 2px;
-                            font-size: 7px;
-                        }
-
-
-                        &:hover {
-                            color: $hovercolor;
-                        }
-                    }
-                }
-            }
-
-
-            .col-xs-3 ul {
-                display: flex;
-                margin: 0;
-
-                li {
-                    color: $footertext;
-                    font-size: 12px;
-
-                }
-
-                a {
-                    padding: 0 8px;
-                    text-decoration: none;
-
-                    :hover {
-                        color: $hovercolor;
-                    }
-                }
-
-                span {
-                    margin: -3px;
-                }
-            }
-
-            p {
-                padding: 3px 0px;
-                text-align: right;
-                color: $footertext;
-                font-size: 12px;
-                margin: 2px;
-
-            }
-
-        }
-
-
-
-
-    }
-
-
-
-
-
-
-    .footer-logo {
-        width: 2px;
-    }
-
-    .footer-logo a {
+      .col-xs-3 ul {
         display: flex;
-        text-decoration: none;
+        margin: 0;
 
-        i {
-            margin: auto;
-            color: $fontcolor;
-            font-size: 32px;
-
-
-
+        li {
+          color: $footertext;
+          font-size: 12px;
         }
 
-        p {
-            color: $fontcolor;
-            margin: 0 5px;
-            font-size: 25px;
-            font-weight: $normal;
+        a {
+          padding: 0 8px;
+          text-decoration: none;
+
+          :hover {
+            color: $hovercolor;
+          }
         }
+
+        span {
+          margin: -3px;
+        }
+      }
+
+      p {
+        padding: 3px 0px;
+        text-align: right;
+        color: $footertext;
+        font-size: 12px;
+        margin: 2px;
+      }
     }
+  }
+
+  .footer-logo {
+    width: 2px;
+  }
+
+  .footer-logo a {
+    display: flex;
+    text-decoration: none;
+
+    i {
+      margin: auto;
+      color: $fontcolor;
+      font-size: 32px;
+    }
+
+    p {
+      color: $fontcolor;
+      margin: 0 5px;
+      font-size: 25px;
+      font-weight: $normal;
+    }
+  }
 }
 
-
-
 h3 {
-    text-transform: uppercase;
-
+  text-transform: uppercase;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 
-    :hover {
-        color: $hovercolor;
-    }
-
-
-
+  :hover {
+    color: $hovercolor;
+  }
 }

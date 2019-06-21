@@ -10,13 +10,13 @@
     div .pictures {
         display: flex;
 
-        @include tablets {
+        @include tablets-max {
             display: block;
         }
     }
 
     .col-sm-6 {
-        @include tablets {
+        @include tablets-max {
             max-width: 100%;
         }
 
@@ -30,13 +30,13 @@
         height: 160px;
         width: 100%;
 
-        @include Desktop-lg-row {
+        @include lg-tablet-md-desktop-max-992 {
             height: 220px;
             width: 100%;
             margin: 0 5px;
         }
 
-        @include tablets {
+        @include tablets-max {
             height: 368px;
             padding: 6px;
         }
@@ -53,7 +53,7 @@ h2 {
     margin: auto;
     word-spacing: 5px;
 
-    @include tablets {
+    @include tablets-max {
         h2 {
             font-weight: 900;
             font-size: 30px;
@@ -78,7 +78,7 @@ h3 {
     text-align: center;
     margin: 8px;
 
-    @include Desktop-lg-row {}
+    @include lg-tablet-md-desktop-max-992 {}
 
 }
 
@@ -95,18 +95,18 @@ h3 {
         font-weight: $light;
         margin: 15px;
 
-        @include Desktop-lg-row {
+        @include lg-tablet-md-desktop-max-992 {
             margin: 0 0 17px;
             text-align: center;
 
         }
 
-        @include tablets {
+        @include tablets-max {
             margin: 0 0 37px;
         }
     }
 
-    @include Desktop-lg-row {
+    @include lg-tablet-md-desktop-max-992 {
         flex-wrap: wrap;
     }
 

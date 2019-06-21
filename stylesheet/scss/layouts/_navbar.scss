@@ -1,92 +1,96 @@
 .navbar {
-    background: $background-color;
-    font-family: $bodyFont;
+  background: $background-color;
+  font-family: $bodyFont;
 
-    &.-dark {
-        width: 100%;
+  &.-dark {
+    width: 100%;
+  }
+
+  .container {
+    @include lg-xl-desktop-min-1200 {
+      width: 1170px;
     }
 
-    .container {
-
-        @include Desktop-xl-nav {}
-
-
-
-        @include Desktop-lg-nav {}
-
-
-
-        @include tablets-nav {}
-
-
+    @include lg-tablet-md-desktop-min-992 {
+      width: 970px;
     }
 
-    div a {
-        margin: 0;
-        display: flex;
+    @include tablets-min {
+      width: 750px;
     }
-
-    div a i {
-        font-size: 32px;
-    }
-
-    div a p {
-        font-size: 25px;
-        margin: 0 5px;
-    }
-
+  }
 }
 
+div a {
+  margin: 0;
+  display: flex;
+}
+
+div a i {
+  font-size: 32px;
+}
+
+div a p {
+  font-size: 25px;
+  margin: 0 5px;
+}
 
 .navbar-toggler {
-    @include dropdownborder {}
+  @include dlg-tablet-md-desktop-max-992 {
+    border: none;
 
-
-
+    display: contents;
+  }
 }
 
 button {
-    .navbar-toggler-icon {
-        @include dropdownwidth {}
+  .navbar-toggler-icon {
+    @include tablets-max {
+      margin: 0;
     }
+  }
 }
 
-span.navbar-toggler-icon>img {
-    margin: 0 0 0 -4px;
+span.navbar-toggler-icon > img {
+  margin: 0 0 0 -4px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: $fontcolor;
-    font-weight: $bold;
-
-
+  color: $fontcolor;
+  font-weight: $bold;
 }
 
 .divider {
-    @include divider {}
+  @include lg-tablet-md-desktop-min-992 {
+    width: 1px;
+    height: 0;
+    margin: 1.5rem 17px;
+    overflow: hidden;
+    border-top: 23px solid $fontcolor;
+  }
 }
 
 .dropdown-divider {
-
-
-    @include dividerdropdown {}
-
-
-
+  @include lg-tablet-md-desktop-max-991 {
+    width: 1px;
+    height: 0;
+    margin: auto;
+    overflow: hidden;
+    border-left: 23px solid $fontcolor;
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: $hovercolor;
-
+  color: $hovercolor;
 }
 
 ul li {
-    margin: auto;
-
-
+  margin: auto;
 }
 
 span {
-    @include dividerdropdownmargin {}
+  @include lg-tablet-md-desktop-max-992 {
+    margin: 10px;
+  }
 }
