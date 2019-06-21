@@ -1,118 +1,96 @@
 .part2 {
+  .container .content {
+    margin: 0 0 3rem;
+  }
 
+  div .pictures {
+    display: flex;
 
-    .container .content {
-        margin: 0 0 3rem;
+    @include tablets-max {
+      display: block;
+    }
+  }
 
+  .col-sm-6 {
+    @include tablets-max {
+      max-width: 100%;
+    }
+  }
 
+  .align_picture {
+    display: block;
+  }
+
+  img {
+    height: 160px;
+    width: 100%;
+
+    @include lg-tablet-md-desktop-max-992 {
+      height: 220px;
+      width: 100%;
+      margin: 0 5px;
     }
 
-    div .pictures {
-        display: flex;
-
-        @include tablets-max {
-            display: block;
-        }
+    @include tablets-max {
+      height: 368px;
+      padding: 6px;
     }
-
-    .col-sm-6 {
-        @include tablets-max {
-            max-width: 100%;
-        }
-
-    }
-
-    .align_picture {
-        display: block;
-    }
-
-    img {
-        height: 160px;
-        width: 100%;
-
-        @include lg-tablet-md-desktop-max-992 {
-            height: 220px;
-            width: 100%;
-            margin: 0 5px;
-        }
-
-        @include tablets-max {
-            height: 368px;
-            padding: 6px;
-        }
-
-    }
+  }
 }
 
 h2 {
-    font-weight: $large;
-    font-size: 32px;
-    text-align: center;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    word-spacing: 5px;
+  font-weight: $large;
+  font-size: 32px;
+  text-align: center;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  word-spacing: 5px;
 
-    @include tablets-max {
-        h2 {
-            font-weight: 900;
-            font-size: 30px;
-            text-align: center;
-            text-align: center;
-            margin: 0 0;
-            word-spacing: 5px;
-        }
+  @include tablets-max {
+    h2 {
+      font-weight: 900;
+      font-size: 30px;
+      text-align: center;
+      text-align: center;
+      margin: 0 0;
+      word-spacing: 5px;
     }
-
+  }
 }
-
-
-
-
-
 
 h3 {
-    font-weight: $semi-bold;
-    font-size: 16px;
-    line-height: 1rem;
-    text-align: center;
-    margin: 8px;
+  font-weight: $semi-bold;
+  font-size: 16px;
+  line-height: 1rem;
+  text-align: center;
+  margin: 8px;
 
-    @include lg-tablet-md-desktop-max-992 {}
-
+  @include lg-tablet-md-desktop-max-992 {
+  }
 }
 
-
-
-
 .row {
-    flex-wrap: unset;
-    margin: 0 -24px;
+  flex-wrap: unset;
+  margin: 0 -24px;
 
-    p {
-        letter-spacing: 1px;
-        text-align: center;
-        font-weight: $light;
-        margin: 15px;
-
-        @include lg-tablet-md-desktop-max-992 {
-            margin: 0 0 17px;
-            text-align: center;
-
-        }
-
-        @include tablets-max {
-            margin: 0 0 37px;
-        }
-    }
+  p {
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: $light;
+    margin: 15px;
 
     @include lg-tablet-md-desktop-max-992 {
-        flex-wrap: wrap;
+      margin: 0 0 17px;
+      text-align: center;
     }
 
+    @include tablets-max {
+      margin: 0 0 37px;
+    }
+  }
 
-
-
-
-
+  @include lg-tablet-md-desktop-max-992 {
+    flex-wrap: wrap;
+  }
 }
