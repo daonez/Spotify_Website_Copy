@@ -19,24 +19,26 @@
       width: 750px;
     }
   }
-}
 
-div a {
-  margin: 0;
-  display: flex;
-}
 
-div a i {
-  font-size: 32px;
-}
+  div a {
+    margin: 0;
+    display: flex;
+  }
 
-div a p {
-  font-size: 25px;
-  margin: 0 5px;
+  div a i {
+    font-size: 32px;
+  }
+
+  div a p {
+    font-size: 25px;
+    margin: 0 5px;
+  }
+
 }
 
 .navbar-toggler {
-  @include dlg-tablet-md-desktop-max-992 {
+  @include lg-tablet-md-desktop-max-992 {
     border: none;
 
     display: contents;
@@ -51,7 +53,7 @@ button {
   }
 }
 
-span.navbar-toggler-icon > img {
+span.navbar-toggler-icon>img {
   margin: 0 0 0 -4px;
 }
 

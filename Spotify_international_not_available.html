@@ -1,266 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Spotify Clone</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="stylesheet/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="stylesheet/scss/main.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Spotify Clone</title>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="stylesheet/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="stylesheet/scss/main.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.spotify.com/us/">
+        <i class="fab fa-spotify"></i>
+        <p>Spotify</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="img/spotifydropdown.png" alt="" /></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.spotify.com/us/premium/">Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://support.spotify.com/us/?_ga=2.140769010.1991167284.1560576101-1646702311.1560576101&utm_medium=www_header&utm_source=www.spotify.com">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.spotify.com/us/download/windows/">Download</a>
+          </li>
+          <li class="nav-item divider" role="separator"></li>
+          <span>
+            <li class="nav-item dropdown-divider " role="separator"></li>
+          </span>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.spotify.com/us/signup/">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://accounts.spotify.com/en/login/?continue=https:%2F%2Fwww.spotify.com%2Fint%2Faccount%2Foverview%2F&_locale=int"
+              tabindex="-1" aria-disabled="true">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="part1">
+    <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <a class="navbar-brand" href="https://www.spotify.com/us/">
-          <i class="fab fa-spotify"></i>
-          <p>Spotify</p>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"><img src="img/spotifydropdown.png" alt=""/></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.spotify.com/us/premium/">Premium</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://support.spotify.com/us/?_ga=2.140769010.1991167284.1560576101-1646702311.1560576101&utm_medium=www_header&utm_source=www.spotify.com"
-                >Help</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.spotify.com/us/download/windows/">Download</a>
-            </li>
-            <li class="nav-item divider" role="separator"></li>
-            <span>
-              <li class="nav-item dropdown-divider " role="separator"></li>
-            </span>
-
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.spotify.com/us/signup/">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://accounts.spotify.com/en/login/?continue=https:%2F%2Fwww.spotify.com%2Fint%2Faccount%2Foverview%2F&_locale=int"
-                tabindex="-1"
-                aria-disabled="true"
-                >Log In</a
-              >
-            </li>
-          </ul>
+        <div>
+          <h1>Spotify is currently not available in your country.</h1>
+          <h2>Be the first to know when we launch.</h2>
+          <form action="">
+            <input class="email" type="email" placeholder="Email address" />
+            <button type="button" role="button" class="btn btn-success sign_up">SIGN UP</button>
+            <p><a href="https://www.spotify.com/us/legal/end-user-agreement/">*Terms and conditions</a> apply.</p>
+          </form>
         </div>
       </div>
-    </nav>
-    <section class="part1">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <div>
-            <h1>Spotify is currently not available in your country.</h1>
-            <h2>Be the first to know when we launch.</h2>
-            <form action="">
-              <input class="email" type="email" placeholder="Email address" />
-              <button type="button" role="button" class="btn btn-success sign_up">SIGN UP</button>
-              <p><a href="https://www.spotify.com/us/legal/end-user-agreement/">*Terms and conditions</a> apply.</p>
-            </form>
-          </div>
+    </div>
+  </section>
+  <section class="part2">
+    <div>
+      <div class="container">
+        <div class="content">
+          <h2>
+            Spotifty gives you instant access to millions of songs - from old favorites to the latest hits. Just hit
+            play to stream anything you like.
+          </h2>
         </div>
-      </div>
-    </section>
-    <section class="part2">
-      <div>
-        <div class="container">
-          <div class="content">
-            <h2>
-              Spotifty gives you instant access to millions of songs - from old favorites to the latest hits. Just hit
-              play to stream anything you like.
-            </h2>
-          </div>
-          <div>
-            <div class="row">
-              <div class="md-6 pictures">
-                <div class="col-sm-6">
-                  <img src="img/music-in-transportation.jpg" class="align_picture" alt="" />
-                  <h3>Listen everywhere</h3>
-                  <p>Spotify works on your computer, mobile, tablet and TV.</p>
-                </div>
-                <div class="col-sm-6">
-                  <img src="img/unlimited_music.jpg" class="align_picture" alt="" />
-                  <h3>Unlimited, ad-free music</h3>
-                  <p>No ads. No interruptions. Just music.</p>
-                </div>
-              </div>
-              <div class="md-6 pictures">
-                <div class="col-sm-6">
-                  <img src="img/chill-chilling-hammock-92870.jpg" class="align_picture" alt="" />
-                  <h3>Download music & listen offline</h3>
-                  <p>Keep playing, even when you don't have a connection.</p>
-                </div>
-                <div class="col-sm-6">
-                  <img src="img/put_your_handsup.jpg" class="align_picture" alt="" />
-                  <h3>Premium sounds better</h3>
-                  <p>Get ready for incredible sound quality.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="footer">
-        <div class="container">
+        <div>
           <div class="row">
-            <div class="col-xs-12 col-md-2">
-              <div class="footer-logo">
-                <a href="https://www.spotify.com/us/"
-                  ><i class="fab fa-spotify"></i>
-                  <p>Spotify</p>
-                </a>
+            <div class="md-6 pictures">
+              <div class="col-sm-6">
+                <img src="img/music-in-transportation.jpg" class="align_picture" alt="" />
+                <h3>Listen everywhere</h3>
+                <p>Spotify works on your computer, mobile, tablet and TV.</p>
+              </div>
+              <div class="col-sm-6">
+                <img src="img/unlimited_music.jpg" class="align_picture" alt="" />
+                <h3>Unlimited, ad-free music</h3>
+                <p>No ads. No interruptions. Just music.</p>
               </div>
             </div>
-            <div class="col-xs-6 col-sm-4 col-md-2">
-              <h3>company</h3>
-              <ul>
-                <li><a href="https://www.spotify.com/us/about-us/contact/">About</a></li>
-                <li>
-                  <a href="https://www.spotifyjobs.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101"
-                    >Jobs</a
-                  >
-                </li>
-                <li>
-                  <a href="https://newsroom.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101"
-                    >For the Record</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-2">
-              <h3>communities</h3>
-              <ul>
-                <li>
-                  <a href="https://artists.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101"
-                    >For Artists</a
-                  >
-                </li>
-                <li>
-                  <a href="https://developer.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101"
-                    >Developers</a
-                  >
-                </li>
-                <li><a href="https://www.spotify.com/int/brands/">Brands</a></li>
-                <li>
-                  <a href="https://investors.spotify.com/?_ga=2.178347620.1991167284.1560576101-1646702311.1560576101"
-                    >Investors</a
-                  >
-                </li>
-                <li><a href="https://spotifyforvendors.com/">Vendors</a></li>
-              </ul>
-            </div>
-            <div class="col-xs-6 col-sm-4 col-md-2">
-              <h3>useful links</h3>
-              <ul>
-                <li>
-                  <a
-                    href="https://support.spotify.com/?utm_source=www.spotify.com&utm_medium=www_footer&_ga=2.178347620.1991167284.1560576101-1646702311.1560576101"
-                    >Help</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.spotify.com/int/redirect/webplayerlink/?utm_medium=www_footer">Web Player</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-12 col-md-4 col-sns">
-              <ul>
-                <li>
-                  <a href="http://instagram.com/spotify"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/spotify"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/Spotify"><i class="fab fa-facebook"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="row bottom-row">
-              <div class="row row-small">
-                <div class="col-xs-9 nav-small">
-                  <ul>
-                    <a href="">
-                      <li><a href="https://www.spotify.com/int/legal/">Legal</a></li>
-                    </a>
-                    <a href="">
-                      <li><a href="https://www.spotify.com/us/privacy/">Privacy Center</a></li>
-                    </a>
-                    <a href="">
-                      <li><a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a></li>
-                    </a>
-                    <a href="">
-                      <li><a href="https://www.spotify.com/int/legal/cookies-policy/">Cookies</a></li>
-                    </a>
-                    <a href="">
-                      <li><a href="https://www.spotify.com/int/legal/privacy-policy/#s3">About Ads</a></li>
-                    </a>
-                  </ul>
-                </div>
-                <div class="col-xs-3 ">
-                  <ul>
-                    <a
-                      href="https://support.spotify.com/us/select-your-country/?continue=http%3A%2F%2Fsupport.spotify.com%2Fus%2F%3F_ga%3D2.122943179.1991167284.1560576101-1646702311.1560576101%26utm_medium%3Dwww_header%26utm_source%3Dwww.spotify.com"
-                    >
-                      <li>International</li>
-                    </a>
-                    <span><img src="img/a-flat-map-of-the-world-14.png" alt=""/></span>
-                  </ul>
-                  <p><small>© 2019 Spotify AB</small></p>
-                </div>
+            <div class="md-6 pictures">
+              <div class="col-sm-6">
+                <img src="img/chill-chilling-hammock-92870.jpg" class="align_picture" alt="" />
+                <h3>Download music & listen offline</h3>
+                <p>Keep playing, even when you don't have a connection.</p>
+              </div>
+              <div class="col-sm-6">
+                <img src="img/put_your_handsup.jpg" class="align_picture" alt="" />
+                <h3>Premium sounds better</h3>
+                <p>Get ready for incredible sound quality.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-2">
+            <div class="footer-logo">
+              <a href="https://www.spotify.com/us/"><i class="fab fa-spotify"></i>
+                <p>Spotify</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <h3>company</h3>
+            <ul>
+              <li><a href="https://www.spotify.com/us/about-us/contact/">About</a></li>
+              <li>
+                <a
+                  href="https://www.spotifyjobs.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101">Jobs</a>
+              </li>
+              <li>
+                <a href="https://newsroom.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101">For
+                  the Record</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <h3>communities</h3>
+            <ul>
+              <li>
+                <a href="https://artists.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101">For
+                  Artists</a>
+              </li>
+              <li>
+                <a
+                  href="https://developer.spotify.com/?_ga=2.93010653.1991167284.1560576101-1646702311.1560576101">Developers</a>
+              </li>
+              <li><a href="https://www.spotify.com/int/brands/">Brands</a></li>
+              <li>
+                <a
+                  href="https://investors.spotify.com/?_ga=2.178347620.1991167284.1560576101-1646702311.1560576101">Investors</a>
+              </li>
+              <li><a href="https://spotifyforvendors.com/">Vendors</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2">
+            <h3>useful links</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://support.spotify.com/?utm_source=www.spotify.com&utm_medium=www_footer&_ga=2.178347620.1991167284.1560576101-1646702311.1560576101">Help</a>
+              </li>
+              <li>
+                <a href="https://www.spotify.com/int/redirect/webplayerlink/?utm_medium=www_footer">Web Player</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-md-4 col-sns">
+            <ul>
+              <li>
+                <a href="http://instagram.com/spotify"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/spotify"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/Spotify"><i class="fab fa-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="row bottom-row">
+            <div class="row row-small">
+              <div class="col-xs-9 nav-small">
+                <ul>
+                  <a href="">
+                    <li><a href="https://www.spotify.com/int/legal/">Legal</a></li>
+                  </a>
+                  <a href="">
+                    <li><a href="https://www.spotify.com/us/privacy/">Privacy Center</a></li>
+                  </a>
+                  <a href="">
+                    <li><a href="https://www.spotify.com/us/legal/privacy-policy/">Privacy Policy</a></li>
+                  </a>
+                  <a href="">
+                    <li><a href="https://www.spotify.com/int/legal/cookies-policy/">Cookies</a></li>
+                  </a>
+                  <a href="">
+                    <li><a href="https://www.spotify.com/int/legal/privacy-policy/#s3">About Ads</a></li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-xs-3 ">
+                <ul>
+                  <a
+                    href="https://support.spotify.com/us/select-your-country/?continue=http%3A%2F%2Fsupport.spotify.com%2Fus%2F%3F_ga%3D2.122943179.1991167284.1560576101-1646702311.1560576101%26utm_medium%3Dwww_header%26utm_source%3Dwww.spotify.com">
+                    <li>International</li>
+                  </a>
+                  <span><img src="img/a-flat-map-of-the-world-14.png" alt="" /></span>
+                </ul>
+                <p><small>© 2019 Spotify AB</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
