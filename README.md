@@ -17,6 +17,7 @@ Spotify is not in Korea therefore the homepage routed me to a unavailable page.
 
 ## What I learnt:
 
+- font awesome
 - responsive design
 - bootstrap 4
 
